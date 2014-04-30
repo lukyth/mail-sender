@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "nodemailer": "~0.6.3",
+    "kue": "~0.7.5",
+    "redis": "~0.10.1"
+  }
+}
