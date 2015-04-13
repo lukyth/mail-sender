@@ -4,6 +4,7 @@ var jobs = kue.createQueue();
 
 var email = '';
 var password = '';
+var reciever = '';
 var mailService = 'Gmail';
 
 var transport = nodemailer.createTransport('SMTP',{
@@ -18,13 +19,13 @@ var mail = {}
 
 var job = jobs.create('email', {
     title: 'mail1',
-    to: 'koobitor@gmail.com'
+    to: reciever
 }).delay(10000).priority('high').save();
 
 for(var i = 2; i < 7; ++i){
     jobs.create('email', {
         title: 'mail'+i,
-        to: 'koobitor@gmail.com',
+        to: reciever,
         from: email
     }).delay(10000 * i).priority('high').save();
 }
