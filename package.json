@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "nodemailer": "~0.6.3",
-    "kue": "~0.7.5",
-    "redis": "~0.10.1"
+    "nodemailer": "0.6.5",
+    "kue": "0.7.9",
+    "redis": "0.10.3"
   }
 }
