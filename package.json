@@ -2,6 +2,6 @@
   "dependencies": {
     "nodemailer": "2.3.0",
     "kue": "0.10.5",
-    "redis": "2.4.2"
+    "redis": "2.5.1"
   }
 }
